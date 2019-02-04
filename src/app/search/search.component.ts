@@ -10,8 +10,9 @@ import { environment } from '../../environments/environment';
 })
 export class SearchComponent implements OnInit {
  search: Search;
-  constructor(private http:HttpClient) { }
-
+  constructor(private http:HttpClient) { 
+this.search=new Search("","","",0,0,0,"")
+}
   ngOnInit() {
     interface ApiResponse{
       gravatar_id:string;
@@ -23,7 +24,7 @@ export class SearchComponent implements OnInit {
        repos_url:string
   }
   this.http.get<ApiResponse>("https://api.github.com/users/daneden?access_token"+environment.apiKey).subscribe(data=>{
-      this.search= new Search(data.gravatar_id,data.name,data.location,data.public_repos,data.followers,data.following,data.repos_url)
+      this.search= new Search(data.gravatar_id,data.name,data.location,data.public_repos,data.followers,data.following,data.repos_url);
   })
 }
 
