@@ -1,4 +1,4 @@
 export class Search {
-    constructor(public name:String,public location:String ){}
+    constructor(public gravatar_id:string,public name:string,public location:string,public public_repos:number,public followers:number,public following:number,public repos_url:string){}
 }
   
