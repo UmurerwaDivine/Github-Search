@@ -1,3 +1,3 @@
 export class Search {
-    constructor(public name:String,public location:String){}
+    constructor(public name:String,public location:String ){}
 }
