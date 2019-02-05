@@ -1,7 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {HttpClient} from '@angular/common/http'
-import {Search} from '../search'
-import { environment } from '../../environments/environment';
+import {Search} from '../search';
 import {SearchRequestService} from '../search-http/search-request.service'
 
 @Component({
