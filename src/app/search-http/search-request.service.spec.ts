@@ -1,12 +1,12 @@
 import { TestBed } from '@angular/core/testing';
 
-import { QuoteRequestService } from './quote-request.service';
+import { SearchRequestService } from './search-request.service';
 
-describe('QuoteRequestService', () => {
+describe('SearchRequestService', () => {
   beforeEach(() => TestBed.configureTestingModule({}));
 
   it('should be created', () => {
-    const service: QuoteRequestService = TestBed.get(QuoteRequestService);
+    const service: SearchRequestService = TestBed.get(SearchRequestService);
     expect(service).toBeTruthy();
   });
 });
