@@ -24,7 +24,7 @@ export class SearchRequestService {
     
       }
       let promise =new Promise((resolve,reject)=>{
-        this.http.get<ApiResponse>("https://api.github.com/users/daneden?access_token"+environment.apiKey).toPromise().then(response=>{
+        this.http.get<ApiResponse>("https://api.github.com/users/daneden?access_token="+environment.apiKey).toPromise().then(response=>{
             
             this.search.avatar_url=response.avatar_url
             this.search.name=response.name
@@ -43,7 +43,7 @@ export class SearchRequestService {
         },
         error=>{
                 this.search.avatar_url="Never, never, never give up."
-                this.search.name="winston churchill"
+                this.search.name="Divine"
                 reject(error)
             }
         )

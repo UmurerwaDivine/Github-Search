@@ -5,14 +5,12 @@ import {HttpClientModule} from '@angular/common/http'
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SearchComponent } from './search/search.component';
-import { ReposComponent } from './repos/repos.component';
 import { FormSearchComponent } from './form-search/form-search.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SearchComponent,
-    ReposComponent,
     FormSearchComponent
   ],
   imports: [
