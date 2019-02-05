@@ -1,5 +1,5 @@
 <div class="row">
-  <p>{{search.name}}</p>
+  
   <form>
     
     <label>Search:
@@ -7,5 +7,16 @@
   </label>
     <button type="submit" class="btn btn-secondary"><i class="fa fa-search"></i></button>
   </form>
- 
+  <blockquote>
+    <img src="{{search.avatar_url}}" width="230" height="230">
+    <p><strong> Name:</strong> {{search.name}}</p>
+    <p><strong>Repositories:</strong> {{search.public_repos}}</p>
+    <p><strong>Followers: </strong>{{search.followers}}</p>
+    <p><strong>Following: </strong> {{search.following}}</p>
+    <a href="{{search.html_url}}" target="_blank">Link to the github page</a>
+    
+
+
+    <footer><cite>{{search.location}}</cite></footer>
+  </blockquote>
 </div>
