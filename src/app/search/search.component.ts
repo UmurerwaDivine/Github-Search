@@ -13,7 +13,7 @@ export class SearchComponent implements OnInit {
   constructor(private searchService:SearchRequestService) { }
 
   
-  ngOnInit() { 
+  ngOnInit() {  
     this.searchService.searchRequest()
     this.search=this.searchService.search
  
