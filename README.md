@@ -1,4 +1,8 @@
-# Github-Search
+# Github-Searh
+
+The github-search project is where you can search anyone who is on Github and view their profile.
+
+## Technology Used
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.2.2.
 
@@ -6,13 +10,14 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Author 
 
-## Build
+Umurerwa Divine
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+### BDD
+you write in the input search any name and click on search icon and the profile will be displayed
+if you want to go to the their github page you will see the link in the small description about them 
 
 ## Running unit tests
 
