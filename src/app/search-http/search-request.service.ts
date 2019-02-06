@@ -11,7 +11,8 @@ export class SearchRequestService {
   constructor(private http:HttpClient) { 
     this.search=new Search("","","",0,0,0,"")
     }
-    searchRequest(){
+    searchRequest(inputName){
+      var userInput = inputName
 
       interface ApiResponse{
               avatar_url:string;
@@ -24,7 +25,7 @@ export class SearchRequestService {
     
       }
       let promise =new Promise((resolve,reject)=>{
-        this.http.get<ApiResponse>("https://api.github.com/users/daneden?access_token="+environment.apiKey).toPromise().then(response=>{
+        this.http.get<ApiResponse>("https://api.github.com/users/"+  userInput + "?access_token=" +environment.apiKey).toPromise().then(response=>{
             
             this.search.avatar_url=response.avatar_url
             this.search.name=response.name

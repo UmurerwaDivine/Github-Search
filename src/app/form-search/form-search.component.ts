@@ -1,4 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,Output,EventEmitter } from '@angular/core';
+import { Repos } from '../repos';
+import { Search } from '../search';
+import {SearchRequestService} from '../search-http/search-request.service'
+
 
 @Component({
   selector: 'app-form-search',

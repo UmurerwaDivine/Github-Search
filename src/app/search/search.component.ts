@@ -10,15 +10,16 @@ import {SearchRequestService} from '../search-http/search-request.service'
 })
 export class SearchComponent implements OnInit {
  search: Search;
+ inputName=""
+
+submitRepos(){
+  this.searchService.searchRequest(this.inputName)
+  console.log(this.inputName)
+}
   constructor(private searchService:SearchRequestService) { }
 
-  
-  ngOnInit() {  
-    this.searchService.searchRequest()
+  ngOnInit(){
+    this.searchService.searchRequest("UmurerwaDivine")
     this.search=this.searchService.search
- 
- }
-
-} 
-
- 
+  }
+}

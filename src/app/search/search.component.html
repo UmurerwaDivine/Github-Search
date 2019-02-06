@@ -1,6 +1,14 @@
 <div class="row">
   
-  <app-form-search></app-form-search>
+  <form>
+
+    <label>Search:
+  <input type="text" class="form-control" placeholder="Enter Username..." name="inputName" [(ngModel)]="inputName" autofocus>
+</label>
+
+<button type="Submit" (click)="submitRepos()"  class="btn btn-secondary"><i class="fa fa-search"></i></button>
+</form>
+
   <blockquote>
     <img src="{{search.avatar_url}}" width="230" height="230">
     <p><strong> Name:</strong> {{search.name}}</p>
