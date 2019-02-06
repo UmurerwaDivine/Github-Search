@@ -25,7 +25,7 @@ export class SearchRequestService {
     
       }
       let promise =new Promise((resolve,reject)=>{
-        this.http.get<ApiResponse>("https://api.github.com/users/"+  userInput + "?access_token=" +environment.apiKey).toPromise().then(response=>{
+        this.http.get<ApiResponse>("https://api.github.com/users/"+  userInput + "?access_token=00bf308a17184122f00a61435313f7db6fad87b8").toPromise().then(response=>{
             
             this.search.avatar_url=response.avatar_url
             this.search.name=response.name
